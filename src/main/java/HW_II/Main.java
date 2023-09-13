@@ -1,8 +1,8 @@
-package ru.netology.service;
+package HW_II;
 
 import java.util.Scanner;
 
-import static ru.netology.service.CustomsService.CALCULATE_CUSTOMS;
+import static HW_II.ru.netology.service.CustomsService.CALCULATE_CUSTOMS;
 
 public class Main {
     public static void main(String[] args) {

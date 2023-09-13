@@ -1,7 +1,7 @@
-package ru.netology.service;
+package HW_II.ru.netology.service;
 
 public class CustomsService {
-    public static final int CALCULATE_CUSTOMS(int price, int weight) {
+    public static final int CALCULATE_CUSTOMS(final int price, final int weight) {
         final double taxOnPrice = 0.01;
         final int taxOnWeight = 100;
 
@@ -16,7 +16,7 @@ public class CustomsService {
             taxWeight = weight * taxOnWeight;
 
         }
-        int result = (int) (taxPrice + taxWeight);
+        final int result = (int) (taxPrice + taxWeight);
         return result;
     }
 }
