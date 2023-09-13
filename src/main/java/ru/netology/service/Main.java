@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static ru.netology.service.CustomsService.CALCULATE_CUSTOMS;
 
-public class HW_22 {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int price, weight;
