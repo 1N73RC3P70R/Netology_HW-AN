@@ -2,7 +2,7 @@ package HW_II;
 
 import java.util.Scanner;
 
-import static HW_II.ru.netology.service.CustomsService.CALCULATE_CUSTOMS;
+import static HW_II.ru.netology.service.CustomsService.calculateCustoms;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +14,6 @@ public class Main {
         System.out.print("Введите вес товара (в кг.): ");
         weight = scanner.nextInt();
 
-
-        System.out.println("Размер пошлины (в руб.) составит: " + CALCULATE_CUSTOMS(price, weight));
+        System.out.println("Размер пошлины (в руб.) составит: " + calculateCustoms(price, weight));
     }
 }
