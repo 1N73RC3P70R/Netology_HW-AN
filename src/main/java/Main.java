@@ -4,7 +4,7 @@ public class Main {
         Book divinaComedia = new Book("Divina Comedia", 1321, danteAlighieri, 988);
 
         Author robertHeinlein = new Author("Robert", "Heinlein", 7);
-        Book starshipTroopers = new Book("Starship Troopers", 1987, robertHeinlein, 263);
+        Book starshipTroopers = new Book("Starship Troopers", 1959, robertHeinlein, 263);
 
 
         System.out.println(divinaComedia.title);
