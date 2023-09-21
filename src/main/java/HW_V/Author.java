@@ -1,3 +1,5 @@
+package HW_V;
+
 public class Author {
     String name, surname;
     int rating;
