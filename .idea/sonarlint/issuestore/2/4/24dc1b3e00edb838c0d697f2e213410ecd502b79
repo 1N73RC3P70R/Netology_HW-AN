@@ -1,9 +1,0 @@
-
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‡øçË8ç£œô©1
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Èˆ™ıÿÿÿÿ
-A
-java:S1659
-"$Declare "weight" on a separate line.(Çû’È8ÿšäÏ©1
-N	java:S106"9Replace this use of System.out or System.err by a logger.(›Ñ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¢Ö„Êùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Ü…µøÿÿÿÿ
