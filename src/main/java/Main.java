@@ -50,7 +50,6 @@ public class Main {
         }
     }
 
-    //ROTATION
     private static int[][] rotateMatrix90(int[][] matrix) {
         int[][] resultMatrix = new int[matrix.length][matrix.length];
         for (int i = 0; i < resultMatrix.length; i++) {
