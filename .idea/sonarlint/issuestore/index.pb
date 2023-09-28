@@ -11,12 +11,6 @@ O
 src/main/java/Objects/Main.java,3\e\3ef8b951ffc27da28245a6c496d70f5f20191e1a
 w
 G.idea/sonarlint/issuestore/8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482,3\0\30f9777ea696a18aa49d3e9967e93a4276065227
-L
-src/main/java/HW_V/Main.java,2\2\2254dc7b1de746071777b8394bde46d5b1337906
-L
-src/main/java/HW_V/Book.java,4\a\4a55b1729f76651664a062ed0ef8f9e3619d57a9
-N
-src/main/java/HW_V/Author.java,a\e\ae418e270f2f558a0fdf096aacbff08fa833c5f3
 M
 src/main/java/HW_VI/Main.java,7\5\7536d84c6a00c17379d0516a1cbf42d638650ba3
 M

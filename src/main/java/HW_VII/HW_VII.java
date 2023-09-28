@@ -1,7 +1,9 @@
+package HW_VII;
+
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class HW_VII {
 
     public static final int SIZE = 3;
 
@@ -120,7 +122,7 @@ public class Main {
     }
 
     private static int[][] newMatrix() {
-        int[][] matrix = new int[Main.SIZE][Main.SIZE];
+        int[][] matrix = new int[HW_VII.SIZE][HW_VII.SIZE];
         Random rand = new Random();
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {

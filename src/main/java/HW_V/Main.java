@@ -10,15 +10,45 @@ public class Main {
 
 
         System.out.println(divinaComedia.title);
-        divinaComedia.estimatePrice();
-        divinaComedia.isTooBig();
-        divinaComedia.matches("Dante");
+
+        int price = divinaComedia.estimatePrice();
+        System.out.println(price + " руб.");
+
+        if (divinaComedia.isTooBig()) {
+            System.out.println("Divina Comedia книга большая!");
+        } else {
+            System.out.println("Divina Comedia книга маленькая!");
+        }
+
+        if (divinaComedia.isMatches("Dante")) {
+            System.out.println("Да, есть в наличии!");
+        } else {
+            System.out.println("Слово не найдено!");
+        }
+
         System.out.println();
         System.out.println();
+
         System.out.println(starshipTroopers.title);
+
         starshipTroopers.estimatePrice();
-        starshipTroopers.isTooBig();
-        starshipTroopers.matches("Heinlein");
-        starshipTroopers.matches("AAAA");
+        System.out.println(price + " руб.");
+
+        if (starshipTroopers.isTooBig()) {
+            System.out.println("Starship Troopers большая книга!");
+        } else {
+            System.out.println("Starship Troopers маленькая книга!");
+        }
+        if (starshipTroopers.isMatches("Heinlein")) {
+            System.out.println("Да, есть в наличии!");
+        } else {
+            System.out.println("Слово не найдено!");
+        }
+
+        if (starshipTroopers.isMatches("AAAA")) {
+            System.out.println("Да, есть в наличии!");
+        } else {
+            System.out.println("Слово не найдено!");
+        }
     }
 }
