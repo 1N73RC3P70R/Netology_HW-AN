@@ -1,4 +1,4 @@
-package HW_IV;
+package Java_Part_I.HW_IV;
 
 import java.util.Scanner;
 
@@ -43,9 +43,11 @@ public class HW_IV {
                         System.out.println("Мы советуем вам УСН доходы - расходов\n" +
                                 "Ваш налог составит: " + taxEarningsMinusSpending(earnings, spending));
                     } else {System.out.println("Мы советуем вам УСН доходы\n" +
-                            "Ваш налог составит: "); sixPercent(earnings);
+                            "Ваш налог составит: ");
+                        sixPercent(earnings);
                         System.out.println("Налог на другой системе: " + taxEarningsMinusSpending(earnings, spending));
                         System.out.println("Экономия: " + (taxEarningsMinusSpending(earnings, spending)));
+                        break;
 
                     }
 

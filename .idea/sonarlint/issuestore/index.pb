@@ -19,3 +19,7 @@ k
 ;src/main/java/HW_II/ru/netology/service/CustomsService.java,3\3\3301c0e71816e19b259aa4b9d34b2a06cee4d4d4
 N
 src/main/java/HW_III/HW_3.java,0\f\0f85ee2112d0c42f29e4ff6361ab7f898418fd44
+w
+G.idea/sonarlint/issuestore/3/0/30f9777ea696a18aa49d3e9967e93a4276065227,b\7\b74e8c230459235775e2f7c88126ddb0ac14fa2d
+P
+ src/main/java/HW_VII/HW_VII.java,e\0\e0c80cf28e8011c38adb9d46b6537cbe2348d11d

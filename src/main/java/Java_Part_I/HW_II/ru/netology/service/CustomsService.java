@@ -1,4 +1,4 @@
-package HW_II.ru.netology.service;
+package Java_Part_I.HW_II.ru.netology.service;
 
 public class CustomsService {
     static final double TAX_ON_PRICE = 0.01;

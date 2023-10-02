@@ -1,4 +1,4 @@
-package HW_I;
+package Java_Part_I.HW_I;
 
 import java.util.Scanner;
 

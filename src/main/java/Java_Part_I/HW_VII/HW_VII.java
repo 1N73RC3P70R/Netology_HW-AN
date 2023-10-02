@@ -1,4 +1,4 @@
-package HW_VII;
+package Java_Part_I.HW_VII;
 
 import java.util.Random;
 import java.util.Scanner;

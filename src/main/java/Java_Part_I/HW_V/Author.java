@@ -1,4 +1,4 @@
-package HW_V;
+package Java_Part_I.HW_V;
 
 public class Author {
     String name, surname;
