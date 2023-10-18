@@ -4,16 +4,15 @@ import java.util.Scanner;
 
 public class HW_12 {
     public static void main(String[] args) {
-        int income, spending;
         Scanner scan = new Scanner(System.in);
         System.out.println("Доходы: ");
-        income = scan.nextInt();
+        int income = scan.nextInt();
         System.out.println("Расходы: ");
-        spending = scan.nextInt();
-        System.out.println("Итого руб.: " + calc(income, spending));
+        int spending = scan.nextInt();
+        System.out.println("Итого руб.: " + calculateNetIncome(income, spending));
     }
-    public static int calc(int income, int spending) {
-        int result = income - spending;
-        return result;
+
+    public static int calculateNetIncome(int income, int spending) {
+        return income + spending;
     }
 }

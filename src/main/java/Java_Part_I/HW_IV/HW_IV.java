@@ -6,67 +6,66 @@ public class HW_IV {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        int earnings = 0;
+        int spending = 0;
         while (true) {
+
             System.out.println("Выберите операцию и введите её номер:\n" +
                     "1. Добавить новый доход\n" +
                     "2. Добавить новый расход\n" +
-                    "3. Выбрать систему налогообложения");
-            System.out.println();
+                    "3. Выбрать ситему налогооблажения");
 
             String input = scanner.nextLine();
-
-            if (input.equals("end")) {
-                System.out.println("Всего доброго!");
+            if (input.equalsIgnoreCase("end")) {
                 break;
-            }
-
-            int earnings = 0;
-            int spending = 0;
-
-            int choice = Integer.parseInt(input);
-            switch (choice) {
-                case 1:
-                    System.out.println("Введите сумму дохода: ");
-                    String moneyInputAdd = scanner.nextLine();
-                    int moneyAdd = Integer.parseInt(moneyInputAdd);
-                    earnings += moneyAdd;
-                    break;
-                case 2:
-                    System.out.println("Введите сумму расхода: ");
-                    String moneyInputSpend = scanner.nextLine();
-                    int moneySpend = Integer.parseInt(moneyInputSpend);
-                    spending += moneySpend;
-                    break;
-                case 3:
-                    //TODO
-                    if (taxEarningsMinusSpending(earnings,spending) > sixPercent(earnings)){
-                        System.out.println("Мы советуем вам УСН доходы - расходов\n" +
-                                "Ваш налог составит: " + taxEarningsMinusSpending(earnings, spending));
-                    } else {System.out.println("Мы советуем вам УСН доходы\n" +
-                            "Ваш налог составит: ");
-                        sixPercent(earnings);
-                        System.out.println("Налог на другой системе: " + taxEarningsMinusSpending(earnings, spending));
-                        System.out.println("Экономия: " + (taxEarningsMinusSpending(earnings, spending)));
+            } else {
+                int operation = Integer.parseInt(input);
+                switch (operation) {
+                    case 1:
+                        System.out.println("Введите сумму дохода: ");
+                        String moneyString = scanner.nextLine();
+                        int money = Integer.parseInt(moneyString);
+                        earnings += money;
                         break;
-
-                    }
-
-                    break;
-                default:
-                    System.out.println("Операция не существует!");
+                    case 2:
+                        System.out.println("Введите сумму расоходов: ");
+                        String spendString = scanner.nextLine();
+                        int spend = Integer.parseInt(spendString);
+                        spending += spend;
+                        break;
+//                    case 3:
+//                        if (taxEarningsMinusSpending(earnings, spending) >= usnIncome()){
+//                            System.out.println();
+//                        }
+//                        break;
+                    default:
+                        System.out.println("Нет такой операции!");
+                }
             }
         }
+        System.out.println("Программа завершена!");
 
     }
-    public static double taxEarningsMinusSpending(int earnings, int spending){
-        int tax = (earnings - spending) * 15/100;
-        if (tax > 0){
+
+
+    public static void programCalculation(){
+
+        if ()
+        System.out.println("Мы советуем вам УСН доходы\n" +
+                "Ваш налог составит: 60 рублей\n" +
+                "Налог на другой системе: 135 рублей\n" +
+                "Экономия: 75 рублей\n");
+    }
+    public static int usnIncome(int earnings, int spending) {
+//        if ()
+        return 0;
+    }
+
+    public static int taxEarningsMinusSpending(int earnings, int spending) {
+        final double FIFTEEN_PERCENT = 0.15;
+        int tax = (int) ((earnings - spending) / FIFTEEN_PERCENT);
+        if (tax >= 0) {
             return tax;
-        } else {return 0;}
-    }
-    public static double sixPercent(int earnings){
-
-    double tax = earnings *0.06;
-return tax;
+        } else return 0;
     }
 }

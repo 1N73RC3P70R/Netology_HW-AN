@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class HW_3 {
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int points = 0;
 
         while (true) {
             System.out.println("Введите год в формате  \"YYYY\": ");
-             int year = scanner.nextInt();
+            int year = scanner.nextInt();
 
             System.out.println("Введите количество дней в формате DDD: ");
-             int date = scanner.nextInt();
-             int correctAnswer = HW_3.Calculation(year);
+            int date = scanner.nextInt();
+            int correctAnswer = HW_3.calculateDaysInYear(year);
 
             if (date != correctAnswer) {
                 System.out.println("Неправильный ответ! " + "Верный ответ - " + correctAnswer + ".");
@@ -24,7 +24,7 @@ public class HW_3 {
         }
     }
 
-    public static int Calculation( int year) {
+    public static int calculateDaysInYear(int year) {
         if (year % 400 == 0) {
             return 366;
         } else if (year % 100 == 0) {
