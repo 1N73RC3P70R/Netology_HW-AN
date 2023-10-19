@@ -56,15 +56,23 @@ public class HW_IV {
         double taxUSN = usnIncome(earnings);
 
         if (taxEarnings > taxUSN) {
-            System.out.printf("Мы советуем вам \"УСН доходы\"\n" +
-                    "Ваш налог составит: %.2f рублей\n" +
-                    "Налог на другой системе: %.2f рублей\n" +
-                    "Экономия: %.2f рублей\n\n", taxEarnings, taxUSN, (int) taxEarnings - taxUSN);
+
+            System.out.printf("""
+                    Мы советуем вам "УСН доходы"
+                    Ваш налог составит: %.2f рублей
+                    Налог на другой системе: %.2f рублей
+                    Экономия: %.2f рублей
+                    %n%n""", taxEarnings, taxUSN, (int) taxEarnings - taxUSN);
+
         } else if (taxEarnings < taxUSN) {
-            System.out.printf("Мы советуем вам \"УСН доходы\"\n" +
-                    "Ваш налог составит: %.2f рублей\n" +
-                    "Налог на другой системе: %.2f рублей\n" +
-                    "Экономия: %.2f рублей\n\n", usnIncome(earnings), taxEarnings, usnIncome(earnings) - taxEarnings);
+
+            System.out.printf("""
+                    Мы советуем вам "УСН доходы"
+                    Ваш налог составит: %.2f рублей
+                    Налог на другой системе: %.2f рублей
+                    Экономия: %.2f рублей
+|                    %n%n""", usnIncome(earnings), taxEarnings, usnIncome(earnings) - taxEarnings);
+
         } else if (Math.abs(taxEarnings - taxUSN) < 0.0001) {
             System.out.println("Налоговая система не имеет значения.\n\n");
         }
