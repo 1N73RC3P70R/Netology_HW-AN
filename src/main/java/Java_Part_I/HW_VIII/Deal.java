@@ -1,3 +1,5 @@
+package Java_Part_I.HW_VIII;
+
 public class Deal {
     protected String comment;
     protected int creditChange;

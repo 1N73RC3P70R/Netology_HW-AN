@@ -1,5 +1,4 @@
-import taxes.USNIncSixPerc;
-import taxes.USNIncMinusExp;
+package Java_Part_I.HW_VIII;
 
 public class HW_IX {
     public static void main(String[] args) {

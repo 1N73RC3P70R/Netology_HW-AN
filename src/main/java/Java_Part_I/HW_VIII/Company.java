@@ -1,10 +1,12 @@
+package Java_Part_I.HW_VIII;
+
 public class Company {
     private String title;
     private int debit;
     private int credit;
-    private taxes.TaxSystem taxSystem;
+    private TaxSystem taxSystem;
 
-    public Company(String title, taxes.TaxSystem taxSystem) {
+    public Company(String title, TaxSystem taxSystem) {
         this.title = title;
         this.taxSystem = taxSystem;
         this.debit = 0;
@@ -19,7 +21,7 @@ public class Company {
         }
     }
 
-    public void setTaxSystem(taxes.TaxSystem taxSystem) {
+    public void setTaxSystem(TaxSystem taxSystem) {
         this.taxSystem = taxSystem;
     }
 
