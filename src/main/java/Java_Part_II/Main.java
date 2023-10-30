@@ -1,19 +1,42 @@
 package Java_Part_II;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Logger logger = new SimpleLogger();
-        logger.log("Сообщение №1");
-        logger.log("Сообщение №2");
-        logger.log("Сообщение №3");
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println();
-        System.out.println();
+        PasswordChecker checkPassword = new PasswordChecker();
 
-        Logger loggerSmart = new SmartLogger();
+        try {
+            System.out.println("Введите мин. длину пароля: ");
+            int minLength = Integer.parseInt(scanner.nextLine());
+            checkPassword.setMinLength(minLength);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Не подходит!");
+        }
 
-        loggerSmart.log("Сообщение");
-        loggerSmart.log("ERROR");
-        loggerSmart.log("Сообщение");
+        try {
+            System.out.println("Введите макс. допустимое количество повторений символа подряд: ");
+            int maxRepeats = Integer.parseInt(scanner.nextLine());
+            checkPassword.setMaxRepeats(maxRepeats);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Не подходит!");
+        }
+
+        while (true) {
+            System.out.println("Введите пароль или end: ");
+            String input = scanner.nextLine();
+
+            if ("end".equalsIgnoreCase(input)) {
+                break;
+            }
+
+            if (checkPassword.verify(input)) {
+                System.out.println("Подходит!");
+            } else {
+                System.out.println("Не подходит!");
+            }
+        }
     }
 }
