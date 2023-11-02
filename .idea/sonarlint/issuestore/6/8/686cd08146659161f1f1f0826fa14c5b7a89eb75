@@ -1,0 +1,10 @@
+
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãŸ¥8³ÆÓ»·1
+c
+java:S1854"ARemove this useless assignment to local variable "balanceCredit".(ò×†èÿÿÿÿÿ8³şÓ»·1
+c
+java:S1854"ARemove this useless assignment to local variable "balanceSimple".(·°¦Äÿÿÿÿÿ8‘ºŞ»·1
+F
+java:S2185"$Remove this silly call to "Math.abs"(ÓÏ¤„ÿÿÿÿÿ8³şÓ»·1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ºÂÙ8´şÓ»·1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(²û³Äúÿÿÿÿ8¢ëŞ»·1

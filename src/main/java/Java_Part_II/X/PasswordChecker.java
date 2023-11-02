@@ -1,4 +1,4 @@
-package Java_Part_II;
+package Java_Part_II.X;
 
 public class PasswordChecker {
     private int minLength, maxRepeats;
