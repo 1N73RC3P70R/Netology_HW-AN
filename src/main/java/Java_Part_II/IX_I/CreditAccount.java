@@ -1,4 +1,5 @@
 package Java_Part_II.IX_I;
+
 public class CreditAccount extends Account {
     private long limit;
 
@@ -17,7 +18,7 @@ public class CreditAccount extends Account {
     }
 
     public boolean add(long amount) {
-        if (balance + amount <= limit) {
+        if (balance + amount <= limit && amount >= 0) {
             balance += amount;
             return true;
         }

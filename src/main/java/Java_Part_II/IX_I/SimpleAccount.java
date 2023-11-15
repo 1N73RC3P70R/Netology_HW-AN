@@ -13,7 +13,7 @@ public class SimpleAccount extends Account {
 
     public boolean add(long amount) {
         balance += amount;
-        return true;
+        return false;
     }
 
     @Override
